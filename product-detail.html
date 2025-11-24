@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .sticky-col {
+            position: sticky;
+            top: 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container py-5">
+        <h3 class="text-center mb-5">Product Detail</h3>
+        <div class="row">
+            <!-- Thumbnail Image -->
+            <div class="col-12 col-md-6 col-lg-2">
+                <div class="sticky-col ">
+                    <img src="img/products/product1.jpg" alt="Product 1" width="100px">
+                    <img src="img/products/product2.jpg" alt="Product 2" width="100px">
+                    <img src="img/products/product3.jpg" alt="Product 3" width="100px">
+                </div>
+            </div>
+            <!-- Product Details -->
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="sticky-col">
+                    <img src="https://m.media-amazon.com/images/I/81GrCeuCzxL.jpg" alt="" width="400px"
+                        class="main-img">
+                </div>
+
+            </div>
+            <!-- Product Info -->
+            <div class="col-12 col-md-12 col-lg-4">
+                <h3>ASUS ROG Strix G16</h3>
+                <strong>ROG Strix G16 (2025)</strong>
+                <li>
+                    <ol>Uses Intel Core Ultra 9 275HX (24 cores / 24 threads).</ol>
+                    <ol>GPU: NVIDIA GeForce RTX 5070 Ti with 12GB GDDR7.</ol>
+                    <ol>Display: 16″, 2.5K (2560 * 1600), 240 Hz, 16:10, 3 ms, G-Sync, MUX switch.</ol>
+                    <ol>Memory: 16 GB DDR5-5600, up to 64 GB.</ol>
+                    <ol>Storage: 1 TB PCIe 4.0 NVMe SSD.</ol>
+                    <ol>Cooling: Tri-fan design + full-width heatsink.</ol>
+                    <ol>Battery: 90 Wh, supports USB-C charging (up to 100W).</ol>
+                    <ol>Ports: HDMI 2.1, 2x Thunderbolt 5, USB-A, 2.5G LAN.</ol>
+                    <ol>Weight / Build: According to 2023 spec sheet it’s ~2.50 kg.</ol>
+                </li>
+                <p>The ASUS ROG Strix G16 is a powerful next-generation gaming laptop designed for gamers and creators
+                    who need exceptional performance, premium visuals, and advanced cooling in a stylish 16-inch form
+                    factor. Built with high-end Intel HX-series or Core Ultra processors and paired with NVIDIA GeForce
+                    RTX graphics, it delivers outstanding speed for AAA gaming, video editing, 3D rendering, and
+                    multitasking. Its 16-inch 16:10 display — available in high-refresh 165 Hz or ultra-smooth 240 Hz
+                    2.5K “Nebula” options — offers vivid colors, sharp details, and fluid motion, making every game and
+                    creative workflow feel incredibly immersive. The Strix G16 also stands out for its advanced Tri-Fan
+                    cooling system, liquid-metal thermal compound, and wide exhaust vents, ensuring stable performance
+                    even during heavy gaming sessions. With customizable RGB lighting, a solid build, fast DDR5 RAM,
+                    expandable storage, and a large 90Wh battery with USB-C charging support, the ROG Strix G16 blends
+                    raw power with modern convenience. Whether you're a competitive gamer, content creator, or power
+                    user, it offers the perfect balance of performance, display quality, and upgradeability, making it
+                    one of the most capable 16-inch gaming laptops in its class.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Check Out
+                </button>
+                <a href="index.html">
+                    <button class="btn btn-danger">Back to home</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Payment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- email -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <!-- Deliver-->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                        <label class="form-check-label" for="radioDefault1">
+                            Delivery
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                        <label class="form-check-label" for="radioDefault2">
+                            Pick Up
+                        </label>
+                    </div>
+                    <!-- Select pay -->
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Choose Payment</option>
+                        <option value="1">KHQR</option>
+                        <option value="2">ABA</option>
+                        <option value="3">Delivery</option>
+                    </select>
+                    price: $1999
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
